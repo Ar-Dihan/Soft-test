@@ -1,5 +1,5 @@
-soft documantation
-Day 1
+Software Development Lifecycles
 
-Day 2
-
+A Software Development Lifecycle Model describes the types of activities
+performed at each stage in a software development project, and how the
+activities relate to one another logically and chronologically.
