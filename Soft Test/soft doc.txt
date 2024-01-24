@@ -1,9 +1,26 @@
-Software Development Lifecycles
-
-A Software Development Lifecycle Model describes the types of activities
-performed at each stage in a software development project, and how the
-activities relate to one another logically and chronologically.
-
-
-
+Chapter 1
+A Perspective on Testing
+Why do we test? The two main reasons are to make a judgment about quality or acceptability and
+to discover problems. We test because we know that we are fallible—this is especially true in the
+domain of software and software-controlled systems. The goal of this chapter is to create a framework within which we can examine software testing.
+1.1 Basic Definitions
+Much of testing literature is mired in confusing (and sometimes inconsistent) terminology, probably because testing technology has evolved over decades and via scores of writers. The International
+Software Testing Qualification Board (ISTQB) has an extensive glossary of testing terms (see the
+website http://www.istqb.org/downloads/glossary.html). The terminology here (and throughout
+this book) is compatible with the ISTQB definitions, and they, in turn, are compatible with the
+standards developed by the Institute of Electronics and Electrical Engineers (IEEE) Computer
+Society (IEEE, 1983). To get started, here is a useful progression of terms.
+Error—People make errors. A good synonym is mistake. When people make mistakes while
+coding, we call these mistakes bugs. Errors tend to propagate; a requirements error may be magnified during design and amplified still more during coding.
+Fault—A fault is the result of an error. It is more precise to say that a fault is the representation of an error, where representation is the mode of expression, such as narrative text, Unified
+Modeling Language diagrams, hierarchy charts, and source code. Defect (see the ISTQB Glossary)
+is a good synonym for fault, as is bug. Faults can be elusive. An error of omission results in a fault
+in which something is missing that should be present in the representation. This suggests a useful
+refinement; we might speak of faults of commission and faults of omission. A fault of commission
+occurs when we enter something into a representation that is incorrect. Faults of omission occur
+when we fail to enter correct information. Of these two types, faults of omission are more difficult
+to detect and resolve.
+Failure—A failure occurs when the code corresponding to a fault executes. Two subtleties
+arise here: one is that failures only occur in an executable representation, which is usually taken
+to be source code, or more precisely, loaded object code; the second subtlety is that this definition 
 
