@@ -24,3 +24,60 @@ Failure—A failure occurs when the code corresponding to a fault executes. Two 
 arise here: one is that failures only occur in an executable representation, which is usually taken
 to be source code, or more precisely, loaded object code; the second subtlety is that this definition 
 
+Software Testing
+© 2010 Taylor & Francis Group, LLC
+relates failures only to faults of commission. How can we deal with failures that correspond to
+faults of omission? We can push this still further: what about faults that never happen to execute,
+or perhaps do not execute for a long time? Reviews (see Chapter 22) prevent many failures by finding faults; in fact, well-done reviews can find faults of omission.
+Incident—When a failure occurs, it may or may not be readily apparent to the user (or customer or tester). An incident is the symptom associated with a failure that alerts the user to the
+occurrence of a failure.
+Test—Testing is obviously concerned with errors, faults, failures, and incidents. A test is the
+act of exercising software with test cases. A test has two distinct goals: to find failures or to demonstrate correct execution.
+Test case—A test case has an identity and is associated with a program behavior. It also has a
+set of inputs and expected outputs.
+Figure 1.1 portrays a life cycle model for testing. Notice that, in the development phases,
+three opportunities arise for errors to be made, resulting in faults that may propagate through the
+remainder of the development process. The fault resolution step is another opportunity for errors
+(and new faults). When a fix causes formerly correct software to misbehave, the fix is deficient. We
+will revisit this when we discuss regression testing.
+From this sequence of terms, we see that test cases occupy a central position in testing. The
+process of testing can be subdivided into separate steps: test planning, test case development, running test cases, and evaluating test results. The focus of this book is how to identify useful sets of
+test cases.
+1.2  Test Cases
+The essence of software testing is to determine a set of test cases for the item to be tested. A test
+case is (or should be) a recognized work product. A complete test case will contain a test case identifier, a brief statement of purpose (e.g., a business rule), a description of preconditions, the actual
+test case inputs, the expected outputs, a description of expected postconditions, and an execution
+history. The execution history is primarily for test management use—it may contain the date when
+the test was run, the person who ran it, the version on which it was run, and the pass/fail result.
+Spec
+Fault
+Fault
+Fault Incident
+Design
+Coding Classify
+fault
+Isolate
+fault
+Fault
+resolution
+
+A testing life cycle.
+
+relates failures only to faults of commission. How can we deal with failures that correspond to
+faults of omission? We can push this still further: what about faults that never happen to execute,
+or perhaps do not execute for a long time? Reviews (see Chapter 22) prevent many failures by finding faults; in fact, well-done reviews can find faults of omission.
+Incident—When a failure occurs, it may or may not be readily apparent to the user (or customer or tester). An incident is the symptom associated with a failure that alerts the user to the
+occurrence of a failure.
+Test—Testing is obviously concerned with errors, faults, failures, and incidents. A test is the
+act of exercising software with test cases. A test has two distinct goals: to find failures or to demonstrate correct execution.
+Test case—A test case has an identity and is associated with a program behavior. It also has a
+set of inputs and expected outputs.
+Figure 1.1 portrays a life cycle model for testing. Notice that, in the development phases,
+three opportunities arise for errors to be made, resulting in faults that may propagate through the
+remainder of the development process. The fault resolution step is another opportunity for errors
+(and new faults). When a fix causes formerly correct software to misbehave, the fix is deficient. We
+will revisit this when we discuss regression testing.
+From this sequence of terms, we see that test cases occupy a central position in testing. The
+process of testing can be subdivided into separate steps: test planning, test case development, running test cases, and evaluating test results. The focus of this book is how to identify useful sets of
+test cases.
+
